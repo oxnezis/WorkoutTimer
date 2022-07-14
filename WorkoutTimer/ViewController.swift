@@ -157,18 +157,18 @@ class ViewController: UIViewController, UITableViewDelegate {
     
  
     
-//    // MARK: - UI Settings
-//    override var shouldAutorotate : Bool {
-//      return false
-//    }
-//
-//    override var preferredStatusBarStyle : UIStatusBarStyle {
-//      return UIStatusBarStyle.lightContent
-//    }
-//
-//    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
-//      return UIInterfaceOrientationMask.portrait
-//    }
+    // MARK: - UI Settings
+    override var shouldAutorotate : Bool {
+      return false
+    }
+
+    override var preferredStatusBarStyle : UIStatusBarStyle {
+      return UIStatusBarStyle.lightContent
+    }
+
+    override var supportedInterfaceOrientations : UIInterfaceOrientationMask {
+      return UIInterfaceOrientationMask.portrait
+    }
     
     
     
