@@ -9,23 +9,27 @@
 /* Begin PBXBuildFile section */
 		989CC8C1287E16590092F328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8C0287E16590092F328 /* AppDelegate.swift */; };
 		989CC8C3287E16590092F328 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8C2287E16590092F328 /* SceneDelegate.swift */; };
-		989CC8C5287E16590092F328 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8C4287E16590092F328 /* ViewController.swift */; };
+		989CC8C5287E16590092F328 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8C4287E16590092F328 /* StopwatchViewController.swift */; };
 		989CC8C8287E16590092F328 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989CC8C6287E16590092F328 /* Main.storyboard */; };
 		989CC8CA287E165A0092F328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 989CC8C9287E165A0092F328 /* Assets.xcassets */; };
 		989CC8CD287E165A0092F328 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 989CC8CB287E165A0092F328 /* LaunchScreen.storyboard */; };
 		989CC8D9287E25060092F328 /* Stopwatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8D8287E25060092F328 /* Stopwatch.swift */; };
+		989CC8DB28818E8B0092F328 /* Tabata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8DA28818E8B0092F328 /* Tabata.swift */; };
+		989CC8DD288197560092F328 /* TabataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989CC8DC288197560092F328 /* TabataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		989CC8BD287E16590092F328 /* WorkoutTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		989CC8C0287E16590092F328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		989CC8C2287E16590092F328 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		989CC8C4287E16590092F328 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		989CC8C4287E16590092F328 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
 		989CC8C7287E16590092F328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		989CC8C9287E165A0092F328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		989CC8CC287E165A0092F328 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		989CC8CE287E165A0092F328 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		989CC8D8287E25060092F328 /* Stopwatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stopwatch.swift; sourceTree = "<group>"; };
+		989CC8DA28818E8B0092F328 /* Tabata.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabata.swift; sourceTree = "<group>"; };
+		989CC8DC288197560092F328 /* TabataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +64,10 @@
 			children = (
 				989CC8C0287E16590092F328 /* AppDelegate.swift */,
 				989CC8C2287E16590092F328 /* SceneDelegate.swift */,
-				989CC8C4287E16590092F328 /* ViewController.swift */,
+				989CC8C4287E16590092F328 /* StopwatchViewController.swift */,
+				989CC8DA28818E8B0092F328 /* Tabata.swift */,
 				989CC8C6287E16590092F328 /* Main.storyboard */,
+				989CC8DC288197560092F328 /* TabataViewController.swift */,
 				989CC8D8287E25060092F328 /* Stopwatch.swift */,
 				989CC8C9287E165A0092F328 /* Assets.xcassets */,
 				989CC8CB287E165A0092F328 /* LaunchScreen.storyboard */,
@@ -141,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				989CC8C5287E16590092F328 /* ViewController.swift in Sources */,
+				989CC8C5287E16590092F328 /* StopwatchViewController.swift in Sources */,
 				989CC8C1287E16590092F328 /* AppDelegate.swift in Sources */,
+				989CC8DB28818E8B0092F328 /* Tabata.swift in Sources */,
+				989CC8DD288197560092F328 /* TabataViewController.swift in Sources */,
 				989CC8C3287E16590092F328 /* SceneDelegate.swift in Sources */,
 				989CC8D9287E25060092F328 /* Stopwatch.swift in Sources */,
 			);

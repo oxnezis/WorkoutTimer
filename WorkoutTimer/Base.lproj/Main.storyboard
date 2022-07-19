@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Zys-G3-Sp3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
@@ -9,9 +9,50 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="KdD-kb-nac">
+            <objects>
+                <viewController id="WP1-aY-CPF" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vzz-pa-dvu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5q7-8Y-a5y">
+                                <rect key="frame" x="133" y="283" width="151" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stopwatch"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="65L-rI-nzd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="49e-nz-0Kl">
+                                <rect key="frame" x="173" y="322" width="68" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tabata"/>
+                                <connections>
+                                    <segue destination="A0i-FZ-kMA" kind="show" id="uTo-S4-iH1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="I3g-uL-NJT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5q7-8Y-a5y" firstAttribute="leading" secondItem="I3g-uL-NJT" secondAttribute="leading" constant="133" id="0Xt-RP-6t3"/>
+                            <constraint firstItem="49e-nz-0Kl" firstAttribute="top" secondItem="5q7-8Y-a5y" secondAttribute="bottom" constant="8" id="4Tr-6s-JMP"/>
+                            <constraint firstItem="49e-nz-0Kl" firstAttribute="centerX" secondItem="Vzz-pa-dvu" secondAttribute="centerX" id="Dct-to-zOH"/>
+                            <constraint firstItem="I3g-uL-NJT" firstAttribute="trailing" secondItem="5q7-8Y-a5y" secondAttribute="trailing" constant="130" id="GGb-mI-Nbc"/>
+                            <constraint firstItem="5q7-8Y-a5y" firstAttribute="top" secondItem="I3g-uL-NJT" secondAttribute="top" constant="195" id="hHk-2h-jxl"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="yMU-7v-aBx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLp-GI-EpI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="96.428571428571431"/>
+        </scene>
+        <!--StopwatchViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WorkoutTimer" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="StopwatchViewController" id="BYZ-38-t0r" customClass="ViewController" customModule="WorkoutTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,12 +64,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Stopwatch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nek-CZ-Zeq">
-                                <rect key="frame" x="140" y="44" width="139" height="36"/>
+                                <rect key="frame" x="140" y="88" width="139" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AC-h4-Qt2">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AC-h4-Qt2">
                                 <rect key="frame" x="236" y="297" width="88" height="49"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
@@ -44,12 +85,12 @@
                                     <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4gc-Ch-qrT"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-uF-7vA">
-                                <rect key="frame" x="75" y="297" width="75" height="49"/>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q2A-uF-7vA">
+                                <rect key="frame" x="56" y="297" width="113" height="49"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Lap">
+                                        <fragment content="Round">
                                             <attributes>
                                                 <font key="NSFont" size="30" name="Helvetica"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -125,6 +166,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Q2A-uF-7vA" secondAttribute="bottom" constant="516" id="z4r-bQ-9hf"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="vvv-5N-Yez"/>
                     <connections>
                         <outlet property="clearButtonView" destination="Q2A-uF-7vA" id="ZzS-gf-7Y9"/>
                         <outlet property="lapTimerLabel" destination="7Tz-VX-vOv" id="JHj-M1-XXY"/>
@@ -135,7 +177,128 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+            <point key="canvasLocation" x="944.92753623188412" y="97.767857142857139"/>
+        </scene>
+        <!--TabataViewController-->
+        <scene sceneID="f1m-4I-r1u">
+            <objects>
+                <viewController storyboardIdentifier="TabataViewController" title="TabataViewController" id="A0i-FZ-kMA" customClass="TabataViewController" customModule="WorkoutTimer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j53-eR-Di4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tabata" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsy-3Y-V8r">
+                                <rect key="frame" x="163.5" y="44" width="87" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Round 0/0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhV-1U-s0V">
+                                <rect key="frame" x="154.5" y="112" width="105" height="28"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoP-T2-591">
+                                <rect key="frame" x="84" y="185" width="246" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MgZ-Tc-STY">
+                                <rect key="frame" x="273" y="422" width="88" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Start">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startStopButton:" destination="A0i-FZ-kMA" eventType="touchUpInside" id="FOW-Vg-GsZ"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3Gh-os-uLd">
+                                <rect key="frame" x="84" y="265" width="246" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Fx-HR-PkJ">
+                                <rect key="frame" x="84" y="277" width="246" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KGE-Bj-wgg">
+                                <rect key="frame" x="57" y="422" width="103" height="49"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Reset">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="resetPauseButton:" destination="A0i-FZ-kMA" eventType="touchUpInside" id="HnI-MM-xBo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hS5-J6-rJe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MgZ-Tc-STY" firstAttribute="baseline" secondItem="KGE-Bj-wgg" secondAttribute="baseline" id="316-3y-bNL"/>
+                            <constraint firstItem="8Fx-HR-PkJ" firstAttribute="top" secondItem="3Gh-os-uLd" secondAttribute="bottom" constant="8" id="9hO-cE-WP9"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="centerX" secondItem="hsy-3Y-V8r" secondAttribute="centerX" id="Itu-by-Nid"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="centerX" secondItem="j53-eR-Di4" secondAttribute="centerX" id="KKU-c6-ypB"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="leading" secondItem="3Gh-os-uLd" secondAttribute="leading" id="KPw-tZ-3sG"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="trailing" secondItem="3Gh-os-uLd" secondAttribute="trailing" id="Z42-Kt-KUH"/>
+                            <constraint firstItem="3Gh-os-uLd" firstAttribute="top" secondItem="CoP-T2-591" secondAttribute="bottom" constant="8" id="aIa-LS-8gM"/>
+                            <constraint firstItem="hS5-J6-rJe" firstAttribute="trailing" secondItem="MgZ-Tc-STY" secondAttribute="trailing" constant="53" id="dBv-0g-hIm"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="centerX" secondItem="rhV-1U-s0V" secondAttribute="centerX" id="ktC-dV-xEp"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="leading" secondItem="8Fx-HR-PkJ" secondAttribute="leading" id="leZ-kF-lvf"/>
+                            <constraint firstItem="rhV-1U-s0V" firstAttribute="top" secondItem="hsy-3Y-V8r" secondAttribute="bottom" constant="32" id="lfY-NF-nc0"/>
+                            <constraint firstItem="KGE-Bj-wgg" firstAttribute="leading" secondItem="hS5-J6-rJe" secondAttribute="leading" constant="57" id="ntf-4v-KgC"/>
+                            <constraint firstItem="MgZ-Tc-STY" firstAttribute="top" secondItem="8Fx-HR-PkJ" secondAttribute="bottom" constant="73" id="o2d-d7-97m"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="top" secondItem="rhV-1U-s0V" secondAttribute="bottom" constant="45" id="oLp-fu-yaJ"/>
+                            <constraint firstItem="CoP-T2-591" firstAttribute="top" secondItem="j53-eR-Di4" secondAttribute="top" constant="185" id="ple-47-3uN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hfU-N4-JsV"/>
+                    <connections>
+                        <outlet property="resetPauseButton" destination="KGE-Bj-wgg" id="hdV-aE-aPl"/>
+                        <outlet property="roundsLabel" destination="rhV-1U-s0V" id="fqx-b6-Rq6"/>
+                        <outlet property="startStopButton" destination="MgZ-Tc-STY" id="S2n-Rm-BX0"/>
+                        <outlet property="tabataProgresView" destination="3Gh-os-uLd" id="XG7-j1-Go1"/>
+                        <outlet property="tabataRestTimerLabel" destination="8Fx-HR-PkJ" id="RKI-of-AZA"/>
+                        <outlet property="tabataWorkTimerLabel" destination="CoP-T2-591" id="cJS-a6-YSh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S5f-5k-1O0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1597.1014492753625" y="96.428571428571431"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ykP-JS-UbX">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Zys-G3-Sp3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="65k-Xx-w9U">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WP1-aY-CPF" kind="relationship" relationship="rootViewController" id="Xft-OY-NIZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wvN-uY-e4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-749.27536231884062" y="95.758928571428569"/>
         </scene>
     </scenes>
     <resources>
